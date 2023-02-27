@@ -1,0 +1,45 @@
+/*
+ * core_gpio_private.h
+ *
+ *  Created on: ٢١‏/٠٢‏/٢٠٢٣
+ *      Author: Sky-pc
+ */
+
+#ifndef STM32F103C_GPIO_CORE_GPIO_PRIVATE_H_
+#define STM32F103C_GPIO_CORE_GPIO_PRIVATE_H_
+
+typedef enum
+{
+    /*_OUTPUT CONFIGURATION.*/
+    OUTPUT_PUSH_PULL_10_MHZ  = 0        ,
+    OUTPUT_OPEN_DRAIN_10_MHZ            ,
+    OUTPUT_ALTER_FUNC_PUSH_PULL_10_MHZ  ,
+    OUTPUT_ALTER_FUNC_OPEN_DRAIN_10_MHZ ,
+
+	/*_OUTPUT CONFIGURATION.*/
+	OUTPUT_PUSH_PULL_2_MHZ  = 0        ,
+	OUTPUT_OPEN_DRAIN_2_MHZ            ,
+	OUTPUT_ALTER_FUNC_PUSH_PULL_2_MHZ  ,
+	OUTPUT_ALTER_FUNC_OPEN_DRAIN_2_MHZ ,
+
+	/*_OUTPUT CONFIGURATION.*/
+	OUTPUT_PUSH_PULL_50_MHZ  = 0        ,
+	OUTPUT_OPEN_DRAIN_50_MHZ            ,
+	OUTPUT_ALTER_FUNC_PUSH_PULL_50_MHZ  ,
+	OUTPUT_ALTER_FUNC_OPEN_DRAIN_50_MHZ ,
+
+
+
+
+    /*_INPUT CONFIGURATION.*/
+    INPUT_ANALOG          ,
+    INPUT_FLOATING        ,
+    INPUT_PULL_DOWN       ,
+    INPUT_PULL_UP         ,
+
+    PIN_MODES_NUM    
+}PIN_MODE_t ; 
+
+
+
+#endif /* STM32F103C_GPIO_CORE_GPIO_PRIVATE_H_ */
